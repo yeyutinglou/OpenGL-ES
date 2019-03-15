@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06293D06222F5FC00090AB14 /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 06293D05222F5FC00090AB14 /* UIImage+Category.m */; };
+		065B0D87223B5C5500094E3F /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B0D86223B5C5500094E3F /* GLView.m */; };
+		065B0D8E223B822100094E3F /* OpenGl.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 065B0D8D223B822100094E3F /* OpenGl.vsh */; };
+		065B0D90223B8BB700094E3F /* OpenGl.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 065B0D8F223B8BB700094E3F /* OpenGl.fsh */; };
 		067C2CA4221E779800E9FD7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 067C2CA3221E779800E9FD7B /* AppDelegate.m */; };
 		067C2CA7221E779800E9FD7B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 067C2CA6221E779800E9FD7B /* ViewController.m */; };
 		067C2CAA221E779800E9FD7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 067C2CA8221E779800E9FD7B /* Main.storyboard */; };
@@ -15,6 +19,8 @@
 		067C2CB2221E779B00E9FD7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 067C2CB1221E779B00E9FD7B /* main.m */; };
 		067C2CBC221E779B00E9FD7B /* OpenGLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 067C2CBB221E779B00E9FD7B /* OpenGLTests.m */; };
 		067C2CC7221E779C00E9FD7B /* OpenGLUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 067C2CC6221E779C00E9FD7B /* OpenGLUITests.m */; };
+		067C2CD6221E77B100E9FD7B /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 067C2CD5221E77B100E9FD7B /* OpenAL.framework */; };
+		067C2CD8221E77B900E9FD7B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 067C2CD7221E77B900E9FD7B /* OpenGLES.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06293D04222F5FC00090AB14 /* UIImage+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Category.h"; sourceTree = "<group>"; };
+		06293D05222F5FC00090AB14 /* UIImage+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Category.m"; sourceTree = "<group>"; };
+		065B0D85223B5C5500094E3F /* GLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
+		065B0D86223B5C5500094E3F /* GLView.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc.preprocessed; path = GLView.m; sourceTree = "<group>"; };
+		065B0D8D223B822100094E3F /* OpenGl.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = OpenGl.vsh; sourceTree = "<group>"; };
+		065B0D8F223B8BB700094E3F /* OpenGl.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = OpenGl.fsh; sourceTree = "<group>"; };
 		067C2C9F221E779800E9FD7B /* OpenGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		067C2CA2221E779800E9FD7B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		067C2CA3221E779800E9FD7B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +63,8 @@
 		067C2CC2221E779C00E9FD7B /* OpenGLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenGLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		067C2CC6221E779C00E9FD7B /* OpenGLUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLUITests.m; sourceTree = "<group>"; };
 		067C2CC8221E779C00E9FD7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		067C2CD5221E77B100E9FD7B /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		067C2CD7221E77B900E9FD7B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				067C2CD8221E77B900E9FD7B /* OpenGLES.framework in Frameworks */,
+				067C2CD6221E77B100E9FD7B /* OpenAL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +101,7 @@
 				067C2CBA221E779B00E9FD7B /* OpenGLTests */,
 				067C2CC5221E779C00E9FD7B /* OpenGLUITests */,
 				067C2CA0221E779800E9FD7B /* Products */,
+				067C2CD4221E77B100E9FD7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,7 +122,13 @@
 				067C2CA3221E779800E9FD7B /* AppDelegate.m */,
 				067C2CA5221E779800E9FD7B /* ViewController.h */,
 				067C2CA6221E779800E9FD7B /* ViewController.m */,
+				06293D04222F5FC00090AB14 /* UIImage+Category.h */,
+				06293D05222F5FC00090AB14 /* UIImage+Category.m */,
 				067C2CA8221E779800E9FD7B /* Main.storyboard */,
+				065B0D85223B5C5500094E3F /* GLView.h */,
+				065B0D86223B5C5500094E3F /* GLView.m */,
+				065B0D8D223B822100094E3F /* OpenGl.vsh */,
+				065B0D8F223B8BB700094E3F /* OpenGl.fsh */,
 				067C2CAB221E779B00E9FD7B /* Assets.xcassets */,
 				067C2CAD221E779B00E9FD7B /* LaunchScreen.storyboard */,
 				067C2CB0221E779B00E9FD7B /* Info.plist */,
@@ -130,6 +153,15 @@
 				067C2CC8221E779C00E9FD7B /* Info.plist */,
 			);
 			path = OpenGLUITests;
+			sourceTree = "<group>";
+		};
+		067C2CD4221E77B100E9FD7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				067C2CD7221E77B900E9FD7B /* OpenGLES.framework */,
+				067C2CD5221E77B100E9FD7B /* OpenAL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +269,9 @@
 			files = (
 				067C2CAF221E779B00E9FD7B /* LaunchScreen.storyboard in Resources */,
 				067C2CAC221E779B00E9FD7B /* Assets.xcassets in Resources */,
+				065B0D8E223B822100094E3F /* OpenGl.vsh in Resources */,
 				067C2CAA221E779800E9FD7B /* Main.storyboard in Resources */,
+				065B0D90223B8BB700094E3F /* OpenGl.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +299,8 @@
 				067C2CA7221E779800E9FD7B /* ViewController.m in Sources */,
 				067C2CB2221E779B00E9FD7B /* main.m in Sources */,
 				067C2CA4221E779800E9FD7B /* AppDelegate.m in Sources */,
+				06293D06222F5FC00090AB14 /* UIImage+Category.m in Sources */,
+				065B0D87223B5C5500094E3F /* GLView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +473,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OpenGL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +490,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OpenGL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
